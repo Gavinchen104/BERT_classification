@@ -13,10 +13,13 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.layers import Embedding, SpatialDropout1D, LSTM, Dropout, Dense, Bidirectional
 import seaborn as sns
 import os
+
+
+
 for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
-
+#load the file and process the data
 df = pd.read_csv('full_dataset_v3.csv',sep=';')
 df.head()
 df.groupby('label').describe()
