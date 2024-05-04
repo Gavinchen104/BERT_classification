@@ -18,7 +18,7 @@ def load_and_preprocess_data(data_file):
     sampled_dfs = []
     for label in labels_to_sample:
         label_df = df_new[df_new['label'] == label]
-        sampled_dfs.append(label_df.sample(frac=0.01))  # Consider adjusting this fraction if needed
+        sampled_dfs.append(label_df.sample(frac=1))  # Consider adjusting this fraction if needed
     df_balanced = pd.concat(sampled_dfs)
     label_encoder = LabelEncoder()
     df_balanced['category'] = label_encoder.fit_transform(df_balanced['label'])

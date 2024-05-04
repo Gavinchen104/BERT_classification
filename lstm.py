@@ -2,15 +2,15 @@ import numpy as np # linear algebra
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, Embedding, SpatialDropout1D, Bidirectional, Dropout
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.models import Sequential # type: ignore
+from tensorflow.keras.layers import LSTM, Dense, Embedding, SpatialDropout1D, Bidirectional, Dropout # type: ignore
+from tensorflow.keras.preprocessing.text import Tokenizer # type: ignore
+from tensorflow.keras.preprocessing.sequence import pad_sequences # type: ignore
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import classification_report, confusion_matrix
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.layers import Embedding, SpatialDropout1D, LSTM, Dropout, Dense, Bidirectional
+from tensorflow.keras.optimizers import Adam # type: ignore
+from tensorflow.keras.layers import Embedding, SpatialDropout1D, LSTM, Dropout, Dense, Bidirectional # type: ignore
 import seaborn as sns
 import os
 
