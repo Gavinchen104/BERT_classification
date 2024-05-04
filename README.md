@@ -16,6 +16,7 @@ pip install -r requirements.txt
 Train and evaluate the model:
 
 ```
+python baseline.py
 python lstm.py
 python bert.py
 ```
